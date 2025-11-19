@@ -1,0 +1,104 @@
+.gbqf-query-filter-block {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.gbqf-query-filter-block .gbqf-filter-field {
+    display: grid;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.gbqf-query-filter-block .gbqf-filter-label {
+    font-weight: 600;
+    font-size: 13px;
+    color: #1d1d1f;
+}
+
+/**
+.gbqf-query-filter-block input[type="text"],
+.gbqf-query-filter-block select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.gbqf-query-filter-block input[type="text"]:focus,
+.gbqf-query-filter-block select:focus {
+    outline: none;
+    border-color: #448aff;
+    box-shadow: 0 0 0 2px rgba(68, 138, 255, 0.2);
+}
+
+.gbqf-query-filter-block .screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+**/
+
+.gbqf-query-filter-block .gbqf-filter-options {
+    display: grid;
+    gap: 6px;
+}
+
+.gbqf-query-filter-block .gbqf-filter-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.gbqf-filter-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    grid-column: 1 / -1;
+}
+
+.gbqf-filter-actions .gbqf-filter-reset {
+    font-size: 14px;
+}
+
+.gbqf-filter-actions .gbqf-filter-reset.is-hidden {
+    display: none;
+}
+
+.gbqf-loading {
+    position: relative;
+    opacity: 0.65;
+    transition: opacity 0.2s ease;
+}
+
+.gbqf-loading::after {
+    content: 'Loading…';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+@media (max-width: 640px) {
+    .gbqf-filter-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .gbqf-filter-actions button[type="submit"] {
+        width: 100%;
+        text-align: center;
+    }
+}

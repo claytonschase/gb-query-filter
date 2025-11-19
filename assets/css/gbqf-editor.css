@@ -1,0 +1,49 @@
+
+
+.gbqf-control-group--tax select,
+.gbqf-control-group--tax .components-base-control,
+.gbqf-control-group--filter .components-base-control,
+.gbqf-control-group--advanced .components-base-control {
+    width: 100%;
+}
+
+.gbqf-control-full {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.gbqf-control-full .wp-core-ui select {
+    width: 100%;
+}
+.gbqf-mb-field-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.gbqf-mb-field-row .components-base-control,
+.gbqf-mb-field-row .components-select-control,
+.gbqf-mb-field-row .components-input-control,
+.gbqf-mb-field-row .components-combobox-control,
+.gbqf-mb-field-row .components-button {
+    width: 100%;
+}
+
+.gbqf-control-helper {
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 6px 0;
+}
+
+/* List View icon colors */
+.block-editor-list-view-leaf .block-editor-list-view-leaf__button[data-type="gbqf/query-filter"] svg {
+    color: #3971b8;
+}
+
+.block-editor-list-view-leaf.is-selected .block-editor-list-view-leaf__button[data-type="gbqf/query-filter"] svg {
+    color: #fff;
+}
